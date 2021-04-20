@@ -1,0 +1,185 @@
+{
+  "stats": {
+    "suites": 2,
+    "tests": 8,
+    "passes": 1,
+    "pending": 0,
+    "failures": 7,
+    "start": "2021-04-20T19:28:10.102Z",
+    "end": "2021-04-20T19:28:10.143Z",
+    "duration": 41
+  },
+  "tests": [
+    {
+      "title": "defines Matrix.defaultProps",
+      "fullTitle": "<Matrix /> defines Matrix.defaultProps",
+      "duration": 1,
+      "currentRetry": 0,
+      "err": {
+        "message": "expected false to equal true",
+        "showDiff": true,
+        "actual": "false",
+        "expected": "true",
+        "stack": "AssertionError: expected false to equal true\n    at Context.<anonymous> (test/0-Matrix.test.js:20:63)\n    at processImmediate (node:internal/timers:464:21)"
+      }
+    },
+    {
+      "title": "is a correctly defined and exported React component which renders a <div> with a className of 'cell'",
+      "fullTitle": "<Cell /> is a correctly defined and exported React component which renders a <div> with a className of 'cell'",
+      "duration": 6,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "has a state key of 'color'",
+      "fullTitle": "<Cell /> has a state key of 'color'",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {
+        "stack": "Error: ShallowWrapper::state() can only be called on class components\n    at ShallowWrapper.state (node_modules/enzyme/build/ShallowWrapper.js:978:17)\n    at Context.<anonymous> (test/1-Cell.test.js:36:22)\n    at processImmediate (node:internal/timers:464:21)",
+        "message": "ShallowWrapper::state() can only be called on class components"
+      }
+    },
+    {
+      "title": "state.color is initially set to the 'value' prop passed from Matrix",
+      "fullTitle": "<Cell /> state.color is initially set to the 'value' prop passed from Matrix",
+      "duration": 1,
+      "currentRetry": 0,
+      "err": {
+        "stack": "Error: ShallowWrapper::state() can only be called on class components\n    at ShallowWrapper.state (node_modules/enzyme/build/ShallowWrapper.js:978:17)\n    at Context.<anonymous> (test/1-Cell.test.js:41:22)\n    at processImmediate (node:internal/timers:464:21)",
+        "message": "ShallowWrapper::state() can only be called on class components"
+      }
+    },
+    {
+      "title": "has an event listener for clicks on the <div> (don't forget: 'onClick' in React!)",
+      "fullTitle": "<Cell /> has an event listener for clicks on the <div> (don't forget: 'onClick' in React!)",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {
+        "message": "expected false to equal true",
+        "showDiff": true,
+        "actual": "false",
+        "expected": "true",
+        "stack": "AssertionError: expected false to equal true\n    at Context.<anonymous> (test/1-Cell.test.js:46:60)\n    at processImmediate (node:internal/timers:464:21)"
+      }
+    },
+    {
+      "title": "has an event listener that, when clicked, calls this.setState() once (make sure you aren't setting state directly, but instead using the component's 'setState' method)",
+      "fullTitle": "<Cell /> has an event listener that, when clicked, calls this.setState() once (make sure you aren't setting state directly, but instead using the component's 'setState' method)",
+      "duration": 1,
+      "currentRetry": 0,
+      "err": {
+        "stack": "TypeError: Attempted to wrap undefined property setState as function\n    at wrapMethod (node_modules/sinon/lib/sinon/util/core/wrap-method.js:72:21)\n    at Function.spy (node_modules/sinon/lib/sinon/spy.js:51:16)\n    at Sandbox.spy (node_modules/sinon/lib/sinon/sandbox.js:302:26)\n    at Context.<anonymous> (test/1-Cell.test.js:50:28)\n    at processImmediate (node:internal/timers:464:21)",
+        "message": "Attempted to wrap undefined property setState as function"
+      }
+    },
+    {
+      "title": "has an event listener that, when clicked, sets state's 'color' key to a value of '#333'",
+      "fullTitle": "<Cell /> has an event listener that, when clicked, sets state's 'color' key to a value of '#333'",
+      "duration": 1,
+      "currentRetry": 0,
+      "err": {
+        "stack": "Error: ShallowWrapper::state() can only be called on class components\n    at ShallowWrapper.state (node_modules/enzyme/build/ShallowWrapper.js:978:17)\n    at Context.<anonymous> (test/1-Cell.test.js:57:22)\n    at processImmediate (node:internal/timers:464:21)",
+        "message": "ShallowWrapper::state() can only be called on class components"
+      }
+    },
+    {
+      "title": "sets the <div>'s inline style attribute to 'style={{backgroundColor: this.state.color}}'",
+      "fullTitle": "<Cell /> sets the <div>'s inline style attribute to 'style={{backgroundColor: this.state.color}}'",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {
+        "stack": "TypeError: Cannot read property 'hasOwnProperty' of undefined\n    at Context.<anonymous> (test/1-Cell.test.js:61:12)\n    at processImmediate (node:internal/timers:464:21)",
+        "message": "Cannot read property 'hasOwnProperty' of undefined"
+      }
+    }
+  ],
+  "pending": [],
+  "failures": [
+    {
+      "title": "defines Matrix.defaultProps",
+      "fullTitle": "<Matrix /> defines Matrix.defaultProps",
+      "duration": 1,
+      "currentRetry": 0,
+      "err": {
+        "message": "expected false to equal true",
+        "showDiff": true,
+        "actual": "false",
+        "expected": "true",
+        "stack": "AssertionError: expected false to equal true\n    at Context.<anonymous> (test/0-Matrix.test.js:20:63)\n    at processImmediate (node:internal/timers:464:21)"
+      }
+    },
+    {
+      "title": "has a state key of 'color'",
+      "fullTitle": "<Cell /> has a state key of 'color'",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {
+        "stack": "Error: ShallowWrapper::state() can only be called on class components\n    at ShallowWrapper.state (node_modules/enzyme/build/ShallowWrapper.js:978:17)\n    at Context.<anonymous> (test/1-Cell.test.js:36:22)\n    at processImmediate (node:internal/timers:464:21)",
+        "message": "ShallowWrapper::state() can only be called on class components"
+      }
+    },
+    {
+      "title": "state.color is initially set to the 'value' prop passed from Matrix",
+      "fullTitle": "<Cell /> state.color is initially set to the 'value' prop passed from Matrix",
+      "duration": 1,
+      "currentRetry": 0,
+      "err": {
+        "stack": "Error: ShallowWrapper::state() can only be called on class components\n    at ShallowWrapper.state (node_modules/enzyme/build/ShallowWrapper.js:978:17)\n    at Context.<anonymous> (test/1-Cell.test.js:41:22)\n    at processImmediate (node:internal/timers:464:21)",
+        "message": "ShallowWrapper::state() can only be called on class components"
+      }
+    },
+    {
+      "title": "has an event listener for clicks on the <div> (don't forget: 'onClick' in React!)",
+      "fullTitle": "<Cell /> has an event listener for clicks on the <div> (don't forget: 'onClick' in React!)",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {
+        "message": "expected false to equal true",
+        "showDiff": true,
+        "actual": "false",
+        "expected": "true",
+        "stack": "AssertionError: expected false to equal true\n    at Context.<anonymous> (test/1-Cell.test.js:46:60)\n    at processImmediate (node:internal/timers:464:21)"
+      }
+    },
+    {
+      "title": "has an event listener that, when clicked, calls this.setState() once (make sure you aren't setting state directly, but instead using the component's 'setState' method)",
+      "fullTitle": "<Cell /> has an event listener that, when clicked, calls this.setState() once (make sure you aren't setting state directly, but instead using the component's 'setState' method)",
+      "duration": 1,
+      "currentRetry": 0,
+      "err": {
+        "stack": "TypeError: Attempted to wrap undefined property setState as function\n    at wrapMethod (node_modules/sinon/lib/sinon/util/core/wrap-method.js:72:21)\n    at Function.spy (node_modules/sinon/lib/sinon/spy.js:51:16)\n    at Sandbox.spy (node_modules/sinon/lib/sinon/sandbox.js:302:26)\n    at Context.<anonymous> (test/1-Cell.test.js:50:28)\n    at processImmediate (node:internal/timers:464:21)",
+        "message": "Attempted to wrap undefined property setState as function"
+      }
+    },
+    {
+      "title": "has an event listener that, when clicked, sets state's 'color' key to a value of '#333'",
+      "fullTitle": "<Cell /> has an event listener that, when clicked, sets state's 'color' key to a value of '#333'",
+      "duration": 1,
+      "currentRetry": 0,
+      "err": {
+        "stack": "Error: ShallowWrapper::state() can only be called on class components\n    at ShallowWrapper.state (node_modules/enzyme/build/ShallowWrapper.js:978:17)\n    at Context.<anonymous> (test/1-Cell.test.js:57:22)\n    at processImmediate (node:internal/timers:464:21)",
+        "message": "ShallowWrapper::state() can only be called on class components"
+      }
+    },
+    {
+      "title": "sets the <div>'s inline style attribute to 'style={{backgroundColor: this.state.color}}'",
+      "fullTitle": "<Cell /> sets the <div>'s inline style attribute to 'style={{backgroundColor: this.state.color}}'",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {
+        "stack": "TypeError: Cannot read property 'hasOwnProperty' of undefined\n    at Context.<anonymous> (test/1-Cell.test.js:61:12)\n    at processImmediate (node:internal/timers:464:21)",
+        "message": "Cannot read property 'hasOwnProperty' of undefined"
+      }
+    }
+  ],
+  "passes": [
+    {
+      "title": "is a correctly defined and exported React component which renders a <div> with a className of 'cell'",
+      "fullTitle": "<Cell /> is a correctly defined and exported React component which renders a <div> with a className of 'cell'",
+      "duration": 6,
+      "currentRetry": 0,
+      "err": {}
+    }
+  ]
+}
